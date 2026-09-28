@@ -1,0 +1,9 @@
+[
+    "Admin",
+    "Super Admin",
+    "Manager",
+    "Employee",
+    "Customer",
+    "Guest",
+    "Other"
+]

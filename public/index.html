@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>QA Bug Report Generator</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+        <h1>QA Bug Report Generator</h1>
+
+        <p>
+            Create a structured QA bug report quickly.
+            All fields are optional.
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <section class="card">
+
+            <h2 class="section-title">
+                Issue Information
+            </h2>
+
+
+            <div class="form-grid">
+
+
+                <!-- TITLE -->
+
+                <div class="form-group full-width">
+
+                    <label for="title">
+                        Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="e.g. Login button does not respond"
+                    >
+
+                    <div class="hint">
+                        UAE date and time will automatically
+                        be added when the report is generated.
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group full-width">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        placeholder="Describe the issue..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- ENVIRONMENT -->
+
+                <div class="form-group">
+
+                    <label for="environment">
+                        Environment
+                    </label>
+
+                    <select id="environment">
+
+                        <option value="">
+                            Loading...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BUILD -->
+
+                <div class="form-group">
+
+                    <label for="version">
+                        Application / Build Version
+                    </label>
+
+                    <input
+                        type="text"
+                        id="version"
+                        placeholder="e.g. v2.4.1 / Build 1024"
+                    >
+
+                </div>
+
+
+                <!-- OS -->
+
+                <div class="form-group">
+
+                    <label for="os">
+                        Operating System
+                    </label>
+
+                    <select id="os">
+
+                        <option value="">
+                            Loading...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BROWSER -->
+
+                <div class="form-group">
+
+                    <label for="browser">
+                        Browser / Device
+                    </label>
+
+                    <select id="browser">
+
+                        <option value="">
+                            Loading...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- USER ROLE -->
+
+                <div class="form-group">
+
+                    <label for="userRole">
+                        User Role
+                    </label>
+
+                    <select id="userRole">
+
+                        <option value="">
+                            Loading...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PRECONDITIONS -->
+
+                <div class="form-group full-width">
+
+                    <label for="preconditions">
+                        Preconditions
+                    </label>
+
+                    <textarea
+                        id="preconditions"
+                        placeholder="What needs to be true before reproducing the issue?"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- STEPS -->
+
+                <div class="form-group full-width">
+
+                    <label for="steps">
+                        Steps to Reproduce
+                    </label>
+
+                    <textarea
+                        id="steps"
+                        placeholder="1. Open the application&#10;2. Navigate to Login&#10;3. Enter credentials&#10;4. Click Login"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- EXPECTED -->
+
+                <div class="form-group">
+
+                    <label for="expected">
+                        Expected Result
+                    </label>
+
+                    <textarea
+                        id="expected"
+                        placeholder="What should happen?"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- ACTUAL -->
+
+                <div class="form-group">
+
+                    <label for="actual">
+                        Actual Result
+                    </label>
+
+                    <textarea
+                        id="actual"
+                        placeholder="What actually happens?"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SEVERITY -->
+
+                <div class="form-group">
+
+                    <label for="severity">
+                        Severity
+                    </label>
+
+                    <select id="severity">
+
+                        <option value="">
+                            Loading...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PRIORITY -->
+
+                <div class="form-group">
+
+                    <label for="priority">
+                        Priority
+                    </label>
+
+                    <select id="priority">
+
+                        <option value="">
+                            Loading...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- REPRODUCIBILITY -->
+
+                <div class="form-group">
+
+                    <label for="reproducibility">
+                        Reproducibility
+                    </label>
+
+                    <select id="reproducibility">
+
+                        <option value="">
+                            Loading...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- FREQUENCY -->
+
+                <div class="form-group">
+
+                    <label for="frequency">
+                        Frequency
+                    </label>
+
+                    <input
+                        type="text"
+                        id="frequency"
+                        placeholder="e.g. 5/5 attempts"
+                    >
+
+                </div>
+
+
+                <!-- TEST DATA -->
+
+                <div class="form-group full-width">
+
+                    <label for="testData">
+                        Test Data
+                    </label>
+
+                    <textarea
+                        id="testData"
+                        placeholder="Account, order ID, product ID, input values, etc."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- EVIDENCE -->
+
+                <div class="form-group full-width">
+
+                    <label for="attachments">
+                        Attachments / Evidence
+                    </label>
+
+                    <textarea
+                        id="attachments"
+                        placeholder="Screenshot, video, console error, API response, logs, etc."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- RELATED ISSUE -->
+
+                <div class="form-group">
+
+                    <label for="relatedIssue">
+                        Related Issue / Requirement
+                    </label>
+
+                    <input
+                        type="text"
+                        id="relatedIssue"
+                        placeholder="e.g. PROJ-1234"
+                    >
+
+                </div>
+
+
+                <!-- REGRESSION -->
+
+                <div class="form-group">
+
+                    <label for="regression">
+                        Regression Information
+                    </label>
+
+                    <input
+                        type="text"
+                        id="regression"
+                        placeholder="e.g. First found in v2.4.0"
+                    >
+
+                </div>
+
+
+                <!-- NOTES -->
+
+                <div class="form-group full-width">
+
+                    <label for="notes">
+                        Additional Notes
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        placeholder="Any additional information..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="actions">
+
+                <button
+                    type="button"
+                    class="btn-secondary"
+                    id="clearButton"
+                >
+                    Clear
+                </button>
+
+                <button
+                    type="button"
+                    class="btn-primary"
+                    id="generateButton"
+                >
+                    Generate Report
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GENERATED REPORT -->
+
+        <section
+            class="card hidden"
+            id="outputCard"
+        >
+
+            <div class="generated-header">
+
+                <h2 class="section-title">
+                    Generated Bug Report
+                </h2>
+
+                <button
+                    type="button"
+                    class="copy-button"
+                    id="copyButton"
+                >
+                    Copy to Clipboard
+                </button>
+
+            </div>
+
+
+            <textarea
+                id="output"
+                readonly
+                spellcheck="false"
+            ></textarea>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="/js/app.js"></script>
+
+</body>
+
+</html>

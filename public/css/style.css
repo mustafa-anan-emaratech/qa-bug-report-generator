@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    background: #f4f6f8;
+
+    color: #1f2937;
+}
+
+
+.container {
+    width: min(1100px, 92%);
+
+    margin: 40px auto;
+}
+
+
+.header {
+    margin-bottom: 28px;
+}
+
+
+.header h1 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+
+    color: #111827;
+}
+
+
+.header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 28px;
+
+    margin-bottom: 24px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+.section-title {
+    margin: 0 0 20px;
+
+    font-size: 18px;
+
+    color: #111827;
+
+    padding-bottom: 12px;
+
+    border-bottom:
+        1px solid #e5e7eb;
+}
+
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    padding: 11px 12px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #111827;
+
+    background: #ffffff;
+
+    transition:
+        border-color 0.15s,
+        box-shadow 0.15s;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.1);
+}
+
+
+textarea {
+    resize: vertical;
+
+    min-height: 100px;
+
+    line-height: 1.5;
+}
+
+
+.hint {
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #9ca3af;
+}
+
+
+.actions {
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: flex-end;
+
+    margin-top: 24px;
+}
+
+
+button {
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 11px 18px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.15s;
+}
+
+
+.btn-primary {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+
+.btn-secondary {
+    background: #f3f4f6;
+
+    color: #374151;
+}
+
+
+.btn-secondary:hover {
+    background: #e5e7eb;
+}
+
+
+.generated-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.generated-header .section-title {
+    margin: 0;
+
+    border: none;
+
+    padding: 0;
+}
+
+
+#output {
+    min-height: 600px;
+
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        Menlo,
+        monospace;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    background: #111827;
+
+    color: #e5e7eb;
+
+    border-color: #374151;
+}
+
+
+.copy-button {
+    background: #059669;
+
+    color: white;
+}
+
+
+.copy-button:hover {
+    background: #047857;
+}
+
+
+.copy-button.copied {
+    background: #16a34a;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 94%;
+
+        margin: 20px auto;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .full-width {
+        grid-column: auto;
+    }
+
+
+    .actions {
+        flex-direction: column;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+
+    .generated-header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+}
